@@ -1,0 +1,98 @@
+*{
+    padding:0;
+    margin:0;
+    
+  }
+  .header{
+    color:white;
+    background-color:#1E90FF;
+    text-align: center;
+    height:8rem;
+    width:100%;
+    h1{
+      font-size: 70px;
+    }
+  }
+  
+  .main-container{
+    margin-top:20px;
+    display:flex;
+  
+  }
+  .left-container{
+    width:20%;
+    border-right:solid 0.5px  lightgray;
+    margin-left: 20px;
+  }
+  
+  .image{
+    
+    text-align: center;
+  }
+  
+  .image img{
+    height:200px;
+    width: 150px;
+  }
+  
+  .right-container{
+    
+    width:70%;
+    
+  }
+  
+  .right-container .heading{
+    padding:20px 50px;
+    font-size:30px;
+  }
+  
+  .Topics{
+    text-decoration: none;
+    color:black;
+    list-style-type:none;
+  }
+  
+  a{
+    text-decoration: none;
+    color:black;
+  }
+  .Topics li a{
+    margin-left:20px;
+  }
+  .books{
+    padding:10px;
+    border:1px solid lightgray;
+    display: inline-block;
+    /* margin:20px; */
+    width:30%; 
+  }
+  
+  .books .title{
+    color:rgb(67, 194, 237,0.9);
+  }
+  
+  .books .author{
+    color:rgba(20, 183, 238, 0.9);
+    font-size: 15px;
+  }
+  
+  .books .type{
+    color:rgb(146, 143, 143);
+    font-size: 15px;
+  }
+  
+  .books .price{
+    color:rgb(248, 48, 48);
+    font-size: 15px;
+  }
+  
+  .btn{
+    color:white;
+    background-color:rgba(20, 183, 238, 0.9);
+    padding:10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  
