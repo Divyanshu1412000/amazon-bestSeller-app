@@ -13,12 +13,16 @@ const BookList = () => {
     );
 }
 
-const wishList = () => {
-   alert("Added to wishList")
+const wishList = (id) => {
+    data.map((book) => {
+        if(id === book.id) {
+            alert(`"${book.title}" is added to your wishlist`);
+        }
+    })    
 }
 
 // eslint-disable-next-line react/prop-types
-const Book =({img, title, author, type, price,info}) => {
+const Book =({id,img, title, author, type, price,info}) => {
     // console.log(title);
     return (
         <article className='books'>
@@ -30,7 +34,7 @@ const Book =({img, title, author, type, price,info}) => {
                 <h5 className='author'>{author}</h5>
                 <h4 className='type'>{type}</h4>
                 <h6 className='price'>${price}</h6>
-                <button className="btn" onClick ={wishList}>Add to wishlist</button>
+                <button className="btn" onClick ={() => wishList(id)}>Add to wishlist</button>
             </div>
             <p className='info'>{info}</p>
         </article>
